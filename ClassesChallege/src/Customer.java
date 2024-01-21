@@ -32,9 +32,7 @@ public class Customer {
         this.email = email;
     }
 
-    public static void printStaticCustomer () {
-        System.out.println("static customer");
-    }
+
 
     @Override
     public String toString() {

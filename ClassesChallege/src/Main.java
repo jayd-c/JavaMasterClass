@@ -16,7 +16,6 @@ public class Main {
         System.out.println(jokeAccount.toString());
 
         Customer customer = new Customer();
-        Customer.printStaticCustomer();
         customer.setCreditLimit(454646465L);
         System.out.println(customer.toString());
     }
