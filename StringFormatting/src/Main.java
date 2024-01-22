@@ -29,6 +29,10 @@ public class Main {
 
         formattedString = "Your age is %d".formatted(age);
         System.out.println(formattedString);
+        //String inspection methods
+        /*
+
+         */
 
     }
 }
