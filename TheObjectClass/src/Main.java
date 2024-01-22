@@ -41,8 +41,6 @@ class  PrimarySchoolStudent extends Student {
 
     @Override
     public String toString() {
-        return "PrimarySchoolStudent{" +
-                "parentName='" + parentName + '\'' +
-                "} " + super.toString();
+        return parentName + " 's is " + super.toString();
     }
 }
