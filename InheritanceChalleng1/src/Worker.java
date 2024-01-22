@@ -10,7 +10,7 @@ public class Worker {
     }
 
     public int getAge () {
-        int birthYear = Integer.parseInt(birthDate.split(".")[2]);
+        int birthYear = Integer.parseInt(birthDate.substring(birthDate.length()-4));
         return 2024 - birthYear;
     }
 
