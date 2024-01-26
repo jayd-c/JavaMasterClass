@@ -50,7 +50,7 @@ public class Printer {
                     tonerLevel-=2;
                 }
                 if(tonerLevel < 0) {
-                    return pages/2;
+                    return pages/2 + pages % 2;
                 }
             }
             else {
