@@ -22,5 +22,15 @@ public class NextMain {
 
         var jaw = Movie.getMovie("A","Jaws2");
         jaw.watchMovie();
+
+        Object unknownObject = Movie.getMovie("C","Airplane");
+        if(unknownObject.getClass().getSimpleName() == "Comedy") {
+            Comedy c = (Comedy) unknownObject;
+            c.watchComedy();
+        } else if (unknownObject instanceof Adventure) {
+            ((Adventure) unknownObject).watchAdventure();
+        } else if(unknownObject instanceof Horror hr) {
+            hr.watchHorror();
+        }
     }
 }
