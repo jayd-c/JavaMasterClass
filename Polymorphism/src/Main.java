@@ -22,7 +22,7 @@ public class Main {
         Car car1 = new ElectricCar("Toyota","Blast","Comes in only suvs now",false,900,1000);
         runRace(car1);
         System.out.println("?".repeat(30));
-        
+
     }
         public static void runRace (Car car) {
                 car.drive();
