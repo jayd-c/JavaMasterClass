@@ -17,6 +17,9 @@ public class Main {
         animals.add(new Horse("Clydestale","big",1000));
         for (Animal a: animals) {
             doAnimalStuff(a);
+            if(a instanceof Mammal currentMammal) {
+                currentMammal.shedHair();
+            }
         }
 
 

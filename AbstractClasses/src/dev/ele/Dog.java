@@ -2,7 +2,7 @@ package dev.ele;
 
 import java.util.Objects;
 
-public class Dog extends Animal{
+public class Dog extends Mammal{
     public Dog(String type, String size, double weight) {
         super(type, size, weight);
     }
@@ -12,6 +12,11 @@ public class Dog extends Animal{
         if(speed.equalsIgnoreCase("Slow")) System.out.println(getExplicitType() + " moving slow");
         else if (speed.equals("Fast")) System.out.println(getExplicitType() + " moving fast");
         else System.out.println(getExplicitType() + " not moving");
+    }
+
+    @Override
+    public void shedHair() {
+        System.out.println(getExplicitType() + " sheds alwa");
     }
 
     @Override
