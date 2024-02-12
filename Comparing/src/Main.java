@@ -44,8 +44,8 @@ class StudentGPAComparator implements Comparator<Student> {
 
     @Override
     public int compare(Student o1, Student o2) {
-//        return (o1.gpa + o1.name).compareTo(o2.gpa + o2.name); order by gpa lowest to highest
-        return (o2.gpa + o2.name).compareTo(o1.gpa + o1.name);
+//        return (o1.gpa + o1.name).compareTo(o2.gpa + o2.name); //order by gpa lowest to highest
+        return (o2.gpa + o2.name).compareTo(o1.gpa + o1.name); //order by gpa highest to lowest
     }
 }
 
