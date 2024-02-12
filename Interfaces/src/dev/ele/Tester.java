@@ -4,11 +4,24 @@ import java.util.List;
 
 public class Tester {
     public static void main(String[] args) {
-        inFlight(new Jet());
+//        inFlight(new Jet());
 
 //        OrbitEarth.log("Testing " + new Satellite());
-        orbit(new Satellite());
+//        orbit(new Satellite());
 
+        Cat myCat = new Cat();
+        printThing(myCat);
+
+        printThing( ()-> {
+            System.out.println("meodn");
+        });
+
+
+
+    }
+
+    static void printThing (Printable thing) { // I can call this interface type
+        thing.print();
     }
     private static void inFlight (FlightEnabled flier) {
         flier.takeOff();

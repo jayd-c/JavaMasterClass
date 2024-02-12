@@ -1,2 +1,5 @@
-package dev.ele;public interface Printable {
+package dev.ele;
+
+public interface Printable {
+    void print();
 }
