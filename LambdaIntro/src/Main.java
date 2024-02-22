@@ -20,6 +20,6 @@ public class Main {
                 new Person("Peppermint", "Patty")
         ));
         //Using anonymous class
-        var comparatorLastName = new Comparator<<Person>()
+//        var comparatorLastName = new Comparator<<Person>()
     }
 }

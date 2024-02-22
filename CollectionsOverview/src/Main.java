@@ -17,6 +17,7 @@ public class Main {
         System.out.println(list);
         System.out.println("Gary is in the list ? "+ list.contains("Gary"));
 
+//        list.sort();
 
 
     }
