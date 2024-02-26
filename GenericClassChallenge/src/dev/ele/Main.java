@@ -1,5 +1,7 @@
 package dev.ele;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -29,6 +31,15 @@ public class Main {
                         "42.2026, -75.00836", "39.4955, -75.5592"));
 
         riverLayer.renderLayer();
-    }
 
+
+    var usMountains = new MountainRange[]{
+            new MountainRange("White Mountain",12,"40.4708, -105.8286", "31.7811, -114.7724"),
+            new MountainRange("Black Mountain",14,"40.4708, -105.8286", "31.7811, -114.7724"),
+    };
+    Layer<MountainRange> mountainRange = new Layer<>(usMountains);
+        System.out.println("**********");
+    mountainRange.renderLayer();
+
+        }
 }

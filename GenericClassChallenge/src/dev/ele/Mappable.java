@@ -23,7 +23,7 @@ abstract class Point implements Mappable {
     }
 
     @Override
-    public void render() {
+    public void render() { //Point implemets render() so subclasses are not enforced.
         System.out.println("Render " + this + " as POINT (" + location() + ")");
     }
 
@@ -42,11 +42,31 @@ abstract class Line implements Mappable {
         }
     }
 
+    //render() => Line does not implement render() from interface Mappable (only abstract classes allowed to do so) so subclasses are enforced to invoke render()
+    public String locations(){
+        return Arrays.deepToString(locations);
+    }
+}
+abstract class Polygon implements Mappable {
+    private int peakHeight;
+    private double[][] polygon;
+
+    public Polygon (int peakHeight, String... locations) {
+        this.peakHeight = peakHeight;
+        this.polygon = new double[locations.length][];
+        int index = 0;
+        for(String l: locations){
+            polygon[index++] = Mappable.stringToLatLon(l);
+        }
+    }
     @Override
     public void render() {
-        System.out.println("Render " + this + " as LINE (" + locations() + ")");
+        System.out.println("Render " + this + " as Mountain range (" + locations() + " Peak is " + peakHeight + ")");
     }
-    private String locations(){
-        return Arrays.deepToString(locations);
+    private String locations() {
+       return Arrays.deepToString(polygon);
+    }
+    private String peak() {
+        return String.valueOf(peakHeight);
     }
 }

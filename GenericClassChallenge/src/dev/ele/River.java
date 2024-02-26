@@ -8,7 +8,10 @@ public class River extends Line {
         super(locations);
         this.name = name;
     }
-
+    @Override
+    public void render() {
+        System.out.println("Render " + this + " as LINE (" + locations() + ")");
+    }
     @Override
     public String toString() {
         return name + " River";
