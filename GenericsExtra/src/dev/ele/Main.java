@@ -23,14 +23,14 @@ public class Main {
             lPAStudents.add(new LPAStudent());
         }
 //        printList(lPAStudents);
-        printList(lPAStudents);
+//        printList(lPAStudents);
     }
-    public static <T extends Student> void printList (List<T> students) {
-        for(var student: students) {
-            System.out.println(student.getYearStarted() + ": " + student);
-        }
-        System.out.println();
-    }
+//    public static <T extends Student> void printList (List<T> students) {
+//        for(var student: students) {
+//            System.out.println(student.getYearStarted() + ": " + student);
+//        }
+//        System.out.println();
+//    }
 
     public static void printMoreLists (List<? extends Student> students) {
         for(var student: students) {
