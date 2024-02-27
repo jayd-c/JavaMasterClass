@@ -10,6 +10,6 @@ public class MountainRange extends Polygon{
 
     @Override
     public String toString() {
-        return name + " MountainRange";
+        return name + " Mountain";
     }
 }

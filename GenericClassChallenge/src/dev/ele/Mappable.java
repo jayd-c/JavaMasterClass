@@ -61,7 +61,7 @@ abstract class Polygon implements Mappable {
     }
     @Override
     public void render() {
-        System.out.println("Render " + this + " as Mountain range (" + locations() + " Peak is " + peakHeight + ")");
+        System.out.println("Render " + this + " as MOUNTAIN RANGE (" + locations() + " Peak is " + peakHeight + ")");
     }
     private String locations() {
        return Arrays.deepToString(polygon);
